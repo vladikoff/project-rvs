@@ -8,4 +8,4 @@ edition = "2018"
 sentry = "0.18"
 rustsec = "0.20.0"
 envmnt = "0.8.2"
-reqwest = "0.7.0"
+reqwest = { version = "0.10", features = ["blocking", "json"] }
