@@ -1,0 +1,11 @@
+[package]
+name = "project-barricade"
+version = "0.1.0"
+authors = ["Vlad Filippov <vlad.filippov@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+sentry = "0.18"
+rustsec = "0.20.0"
+envmnt = "0.8.2"
+reqwest = "0.7.0"
