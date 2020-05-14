@@ -15,7 +15,7 @@ fn main() {
 
     for source in envmnt::get_or_panic("SCAN_SOURCES").split(",") {
         println!("Reading {:?}", source);
-        let mut resp = reqwest::get(source).unwrap();
+        let mut resp = reqwest::blocking::get(source).unwrap();
         assert!(resp.status().is_success());
 
         let mut content = String::new();
