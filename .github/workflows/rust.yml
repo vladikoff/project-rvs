@@ -21,4 +21,4 @@ jobs:
     - name: Build
       run: cargo build
     - name: Run
-      run: cargo run
+      run: SCAN_SOURCES=${{ secrets.SCAN_SOURCES }} SCAN_SENTRY_DSN=${{ secrets.SECRET_KEY }} cargo run
