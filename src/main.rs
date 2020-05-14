@@ -5,9 +5,9 @@ use std::str::FromStr;
 fn main() {
     let _output = envmnt::load_file(".env");
 
-    if envmnt::exists("SENTRY_DSN") {
-        println!("{}", envmnt::get_or_panic("SENTRY_DSN"));
-        let _guard = sentry::init(envmnt::get_or_panic("SENTRY_DSN"));
+    if envmnt::exists("SCAN_SENTRY_DSN") {
+        println!("{}", envmnt::get_or_panic("SCAN_SENTRY_DSN"));
+        let _guard = sentry::init(envmnt::get_or_panic("SCAN_SENTRY_DSN"));
     } else {
         println!("Sentry not configured");
     }
