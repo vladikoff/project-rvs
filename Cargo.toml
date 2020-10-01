@@ -1,5 +1,5 @@
 [package]
-name = "project-barricade"
+name = "project-rvs"
 version = "0.1.0"
 authors = ["Vlad Filippov <vlad.filippov@gmail.com>"]
 edition = "2018"

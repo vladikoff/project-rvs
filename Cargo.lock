@@ -842,7 +842,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "project-barricade"
+name = "project-rvs"
 version = "0.1.0"
 dependencies = [
  "envmnt",
